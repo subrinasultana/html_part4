@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>part-4</title>
+		<base href="#" target="_blank">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<!-- display -->
 		<header>
-			<h1 style="text-align: center;">Display</h1>
+			<h1>Display</h1>
 			<!-- block -->
 			<div class="border">
 				<h2>Block Level Display</h2>
@@ -44,5 +45,89 @@
 			</div>
 			<p>NB: <q><samp>with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</samp></q></p>
 		</header>
+		<!-- block & inline element -->
+		<section>
+			<h1>Block & Inline Elements</h1>
+			<h2 class="border" style="text-align: center;">This is a BLOCK ELEMENT and i'm an <span class="blue">INLINE ELEMENT</span> within a block</h2>
+		</section>
+		<!-- margin & padding -->
+		<section>
+			<div class="border2">
+				<h1>Margin & Padding</h1>
+				<div class="box greenbox"></div>
+				<div class="box bluebox"></div>
+				<ul>
+					NB:
+					<li><samp>Margin creates space outside of any defined borders. Both box have margin of 50px around all their sides.</samp></li>
+					<li><samp>Padding generates space inside of any defined borders. greenbox has padding of 20px around all its side where bluebox has no padding.</samp></li>
+				</ul>
+			</div>
+		</section>
+		<!-- html tag -->
+		<section class="border">
+			<h2>Iframe tag</h2>
+			<iframe src="https://allwebco-templates.com/support/S_script_IFrame.htm" width="500" height="400"></iframe>
+			<h2>Map/Area tag</h2>
+			<p>Click on the image elements to read more about them:</p>
+			<img src="images/work.jpg" alt="work" usemap="#work">
+			<map name="work">
+				<area shape="rect" coords="2,2,167,166" href="images/mobile.jpg" alt="mobile">
+				<area shape="rect" coords="172,188,426,0" href="images/keyboard.jpg" alt="keyboard">
+				<area shape="rect" coords="467,135,626,3" href="images/pen.jpg" alt="pen">
+				<area shape="circle" coords="577,252,71" href="images/earphone.jpg" alt="earphone">
+			</map>
+			<h2>SVG tag</h2>
+			<svg>
+				<circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="green" />
+			</svg>
+			<h2>Button tag</h2>
+			<button>Click</button>
+		</section>
+		<!-- Semantic Markup -->
+		<section  class="border">
+			<h1>Semantic Markup</h1>
+			<article class="border3">
+				<h2>Article Tag</h2>
+				<p>
+					The <q>article</q> element specifies independent, self-contained content. This element can be used:
+					<ul>
+						<li>Forum post</li>
+						<li>Blog post</li>
+						<li>Newspaper article</li>
+					</ul>
+				</p>
+			</article>
+			<aside class="border3">
+				<h2>Aside Tag</h2>
+				<p><q>aside</q> tag defines some content aside from the content it is placed in. It is is often placed as a sidebar in a document.</p>
+				<div class="tags">
+					<h4>Tags</h4>
+					<button>Travel</button>
+					<button>New York</button>
+					<button>London</button>
+					<button>Shopping</button>
+					<button>News</button>
+				</div>
+			</aside>
+			<figure class="border3">
+				<h2>Figure Tag</h2>
+				<p>An image and a caption can be grouped together in a <q>figure</q> element.</p>
+				<img src="images/bird.jpg" alt="bird" width="300">
+				<figcaption>Fig1. - Bird flying in the sky.</figcaption>
+			</figure>
+			<details class="border3" open>
+				<h2>Details</h2>
+				<summary></summary>
+					<p><q>details</q> tag specifies additional details that the user can open and close on demand.By default, the widget is closed. When open, it expands, and displays the content within</p>
+					<h2>Summary</h2>
+					<p>it defines a visible heading for the <q>details</q> element. The heading can be clicked to view/hide the details.It should be the first child element of the <q>details</q> element</p>
+			</details>
+		</section>
+		<!-- footer -->
+		<footer>
+			<h1>Footer</h1>
+			<p>For more information contact us:+00991234</p>
+			<p>Learn more from &copy; w3school</p>
+		</footer>
 	</body>
 </html>
